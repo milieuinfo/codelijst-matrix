@@ -34,6 +34,7 @@
       "@language" : "nl",
       "@value" : "Afvalwater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:bemalingswater",
@@ -43,6 +44,7 @@
       "@language" : "nl",
       "@value" : "Bemalingswater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:biota",
@@ -52,6 +54,7 @@
       "@language" : "nl",
       "@value" : "Biota"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:depositie",
@@ -61,6 +64,7 @@
       "@language" : "nl",
       "@value" : "Depositie"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:270"
   }, {
     "@id" : "cm:drinkwater",
@@ -70,6 +74,7 @@
       "@language" : "nl",
       "@value" : "Drinkwater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:eieren",
@@ -79,6 +84,7 @@
       "@language" : "nl",
       "@value" : "Eieren"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:gewassen",
@@ -88,6 +94,7 @@
       "@language" : "nl",
       "@value" : "Gewassen"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:groenten",
@@ -97,6 +104,7 @@
       "@language" : "nl",
       "@value" : "Groenten"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:grondwater",
@@ -106,6 +114,7 @@
       "@language" : "nl",
       "@value" : "Grondwater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:hard_gesteente",
@@ -115,6 +124,7 @@
       "@language" : "nl",
       "@value" : "Hard gesteente"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:infrastructuur",
@@ -124,6 +134,7 @@
       "@language" : "nl",
       "@value" : "Infrastructuur"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:koelwater",
@@ -133,6 +144,7 @@
       "@language" : "nl",
       "@value" : "Koelwater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:oppervlaktewater",
@@ -142,6 +154,7 @@
       "@language" : "nl",
       "@value" : "Oppervlaktewater"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:sediment",
@@ -151,6 +164,7 @@
       "@language" : "nl",
       "@value" : "Sediment"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:strooisel",
@@ -164,6 +178,7 @@
       "@language" : "nl",
       "@value" : "Strooisel"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:vilt",
@@ -177,6 +192,7 @@
       "@language" : "nl",
       "@value" : "Vilt"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:7884"
   }, {
     "@id" : "cm:waterbodem",
@@ -186,6 +202,7 @@
       "@language" : "nl",
       "@value" : "Waterbodem"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:15179"
   }, {
     "@id" : "cm:zwevend_stof",
@@ -195,10 +212,12 @@
       "@language" : "nl",
       "@value" : "Zwevend stof"
     },
+    "topConceptOf" : "vlcs:matrix",
     "theme" : "gemet:270"
   }, {
     "@id" : "vlcs:matrix",
     "@type" : "skos:ConceptScheme",
+    "hasTopConcept" : [ "cm:strooisel", "cm:depositie", "cm:bemalingswater", "cm:eieren", "cm:groenten", "cm:grondwater", "cm:gewassen", "cm:waterbodem", "cm:oppervlaktewater", "cm:sediment", "cm:infrastructuur", "cm:vilt", "cm:afvalwater", "cm:hard_gesteente", "cm:koelwater", "cm:biota", "cm:drinkwater", "cm:zwevend_stof" ],
     "prefLabel" : {
       "@language" : "nl",
       "@value" : "Codelijst matrices."
@@ -216,8 +235,16 @@
     "prefLabel" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
     },
+    "hasTopConcept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+      "@type" : "@id"
+    },
     "theme" : {
       "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "topConceptOf" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
       "@type" : "@id"
     },
     "definition" : {

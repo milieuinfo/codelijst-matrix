@@ -13,6 +13,12 @@ for (col in list("https://data.omgeving.vlaanderen.be/id/collection/matrix/water
   names(df2) <- c("uri","member")
   df <- bind_rows(df, df2)
 }
+tco <- subset(df, topConceptOf == 'https://data.omgeving.vlaanderen.be/id/conceptscheme/matrix' ,
+              select=c(uri, topConceptOf))
+htc <- as.list(tco["uri"])
+df2 <- data.frame('https://data.omgeving.vlaanderen.be/id/conceptscheme/matrix', htc)
+names(df2) <- c("uri","hasTopConcept")
+df <- bind_rows(df, df2)
 df <- df %>%
   rename("@id" = uri,
          "@type" = type)
