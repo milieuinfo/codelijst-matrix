@@ -1,0 +1,237 @@
+{
+  "@graph" : [ {
+    "@id" : "com:bodem",
+    "@type" : "skos:Collection",
+    "inScheme" : "vlcs:matrix",
+    "member" : [ "cm:zwevend_stof", "cm:depositie" ],
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Collectie van matrices m.b.t. bodem."
+    }
+  }, {
+    "@id" : "com:lucht",
+    "@type" : "skos:Collection",
+    "inScheme" : "vlcs:matrix",
+    "member" : [ "cm:vilt", "cm:gewassen", "cm:hard_gesteente", "cm:sediment", "cm:eieren", "cm:groenten", "cm:biota", "cm:strooisel", "cm:infrastructuur" ],
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Collectie van matrices m.b.t. lucht."
+    }
+  }, {
+    "@id" : "com:water",
+    "@type" : "skos:Collection",
+    "inScheme" : "vlcs:matrix",
+    "member" : [ "cm:oppervlaktewater", "cm:drinkwater", "cm:bemalingswater", "cm:grondwater", "cm:koelwater", "cm:waterbodem", "cm:afvalwater" ],
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Collectie van matrices m.b.t. water."
+    }
+  }, {
+    "@id" : "cm:afvalwater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Afvalwater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:bemalingswater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Bemalingswater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:biota",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Biota"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:depositie",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Depositie"
+    },
+    "theme" : "gemet:270"
+  }, {
+    "@id" : "cm:drinkwater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Drinkwater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:eieren",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Eieren"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:gewassen",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Gewassen"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:groenten",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Groenten"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:grondwater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Grondwater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:hard_gesteente",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Hard gesteente"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:infrastructuur",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Infrastructuur"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:koelwater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Koelwater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:oppervlaktewater",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Oppervlaktewater"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:sediment",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Sediment"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:strooisel",
+    "@type" : "skos:Concept",
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "Afgestorven plantenmateriaal dat op de bodem ligt en nog niet verteerd is."
+    },
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Strooisel"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:vilt",
+    "@type" : "skos:Concept",
+    "definition" : {
+      "@language" : "nl",
+      "@value" : "Afgestorven gazonmaaisel en plantendelen, mossen, mosresten en ander organisch materiaal dat met de wind wordt aangevoerd dat een ondoordringbare laag vormt op de bodem."
+    },
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Vilt"
+    },
+    "theme" : "gemet:7884"
+  }, {
+    "@id" : "cm:waterbodem",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Waterbodem"
+    },
+    "theme" : "gemet:15179"
+  }, {
+    "@id" : "cm:zwevend_stof",
+    "@type" : "skos:Concept",
+    "inScheme" : "vlcs:matrix",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Zwevend stof"
+    },
+    "theme" : "gemet:270"
+  }, {
+    "@id" : "vlcs:matrix",
+    "@type" : "skos:ConceptScheme",
+    "prefLabel" : {
+      "@language" : "nl",
+      "@value" : "Codelijst matrices."
+    }
+  } ],
+  "@context" : {
+    "member" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#member",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "com" : "https://data.omgeving.vlaanderen.be/id/collection/matrix/",
+    "vlcs" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+    "dct" : "http://purl.org/dc/terms/",
+    "gemet" : "http://www.eionet.europa.eu/gemet/concept/",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "cm" : "https://data.omgeving.vlaanderen.be/id/concept/matrix/",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}
