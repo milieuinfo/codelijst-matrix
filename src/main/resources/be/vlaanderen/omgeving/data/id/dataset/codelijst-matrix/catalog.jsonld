@@ -40,11 +40,12 @@
       "@language" : "nl",
       "@value" : "Thesaurus matrixtypes"
     },
+    "rootResource" : "omg_conceptscheme:codelijst-matrix",
     "label" : {
       "@language" : "nl",
       "@value" : "Dataset Codelijst Matrix"
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "contactPoint" : "omg_vcard:helpdesk",
     "distribution" : [ "omg_distribution:codelijst-matrix_ttl", "omg_distribution:codelijst-matrix_jsonld", "omg_distribution:codelijst-matrix_csv" ],
     "landingPage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html",
@@ -71,10 +72,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in text/csv formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-matrix/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.csv",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.csv",
     "mediaType" : "https://www.iana.org/assignments/media-types/text/csv",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-matrix_csv.html"
   }, {
@@ -98,10 +99,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in jsonld rdf-formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-matrix/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.jsonld",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.jsonld",
     "mediaType" : "https://www.iana.org/assignments/media-types/application/ld+json",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-matrix_jsonld.html"
   }, {
@@ -125,10 +126,10 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in Turtle rdf-formaat."
     },
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
-    "downloadURL" : "https://github.com/milieuinfo/codelijst-matrix/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.ttl",
+    "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.ttl",
     "mediaType" : "https://www.iana.org/assignments/media-types/text/turtle",
     "page" : "https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-matrix_ttl.html"
   } ],
@@ -140,6 +141,9 @@
     "theme" : {
       "@id" : "http://www.w3.org/ns/dcat#theme",
       "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "accrualPeriodicity" : {
       "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
@@ -174,6 +178,10 @@
       "@id" : "http://purl.org/dc/terms/temporal",
       "@type" : "@id"
     },
+    "rootResource" : {
+      "@id" : "http://rdfs.org/ns/void#rootResource",
+      "@type" : "@id"
+    },
     "alternative" : {
       "@id" : "http://purl.org/dc/terms/alternative"
     },
@@ -201,9 +209,6 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "downloadURL" : {
       "@id" : "http://www.w3.org/ns/dcat#downloadURL",
