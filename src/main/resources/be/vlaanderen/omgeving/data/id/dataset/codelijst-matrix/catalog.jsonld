@@ -45,7 +45,7 @@
       "@language" : "nl",
       "@value" : "Dataset Codelijst Matrix"
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "contactPoint" : "omg_vcard:helpdesk",
     "distribution" : [ "omg_distribution:codelijst-matrix_ttl", "omg_distribution:codelijst-matrix_jsonld", "omg_distribution:codelijst-matrix_csv" ],
     "landingPage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html",
@@ -72,7 +72,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in text/csv formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.csv",
@@ -99,7 +99,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in jsonld rdf-formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.jsonld",
@@ -126,7 +126,7 @@
       "@language" : "nl",
       "@value" : "Codelijst Matrix, in Turtle rdf-formaat."
     },
-    "versionInfo" : "1.0.5",
+    "versionInfo" : "1.0.6",
     "accessURL" : "https://github.com/milieuinfo/codelijst-matrix.git",
     "compressFormat" : "http://www.iana.org/assignments/media-types/application/gzip",
     "downloadURL" : "https://raw.githubusercontent.com/milieuinfo/codelijst-matrix/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/matrix.ttl",
@@ -171,6 +171,9 @@
       "@id" : "http://purl.org/dc/terms/spatial",
       "@type" : "@id"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "temporal" : {
       "@id" : "http://purl.org/dc/terms/temporal",
       "@type" : "@id"
@@ -206,9 +209,6 @@
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "downloadURL" : {
       "@id" : "http://www.w3.org/ns/dcat#downloadURL",
