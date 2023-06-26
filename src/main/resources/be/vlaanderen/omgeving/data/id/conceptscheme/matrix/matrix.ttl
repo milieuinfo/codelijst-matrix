@@ -1,13 +1,13 @@
+@prefix cm:    <https://data.omgeving.vlaanderen.be/id/concept/matrix/> .
 @prefix com:   <https://data.omgeving.vlaanderen.be/id/collection/matrix/> .
-@prefix vlcs:  <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix gemet: <http://www.eionet.europa.eu/gemet/concept/> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cm:    <https://data.omgeving.vlaanderen.be/id/concept/matrix/> .
-@prefix dcat:  <http://www.w3.org/ns/dcat#> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vlcs:  <https://data.omgeving.vlaanderen.be/id/conceptscheme/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 com:lucht  a            skos:Collection ;
         skos:inScheme   vlcs:matrix ;
@@ -36,23 +36,17 @@ cm:waterbodem  a           skos:Concept ;
         skos:topConceptOf  vlcs:matrix ;
         dcat:theme         gemet:15179 .
 
-cm:depositie  a            skos:Concept ;
-        skos:inScheme      vlcs:matrix ;
-        skos:prefLabel     "Depositie"@nl ;
-        skos:topConceptOf  vlcs:matrix ;
-        dcat:theme         gemet:270 .
-
 cm:biota  a                skos:Concept ;
         skos:inScheme      vlcs:matrix ;
         skos:prefLabel     "Biota"@nl ;
         skos:topConceptOf  vlcs:matrix ;
         dcat:theme         gemet:7884 .
 
-cm:eieren  a               skos:Concept ;
+cm:depositie  a            skos:Concept ;
         skos:inScheme      vlcs:matrix ;
-        skos:prefLabel     "Eieren"@nl ;
+        skos:prefLabel     "Depositie"@nl ;
         skos:topConceptOf  vlcs:matrix ;
-        dcat:theme         gemet:7884 .
+        dcat:theme         gemet:270 .
 
 com:water  a            skos:Collection ;
         skos:inScheme   vlcs:matrix ;
@@ -62,6 +56,12 @@ com:water  a            skos:Collection ;
 cm:groenten  a             skos:Concept ;
         skos:inScheme      vlcs:matrix ;
         skos:prefLabel     "Groenten"@nl ;
+        skos:topConceptOf  vlcs:matrix ;
+        dcat:theme         gemet:7884 .
+
+cm:eieren  a               skos:Concept ;
+        skos:inScheme      vlcs:matrix ;
+        skos:prefLabel     "Eieren"@nl ;
         skos:topConceptOf  vlcs:matrix ;
         dcat:theme         gemet:7884 .
 

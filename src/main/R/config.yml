@@ -1,0 +1,11 @@
+skos:
+  distributie_pad: ../resources/be/vlaanderen/omgeving/data/id/conceptscheme/matrix/
+  distributie_naam: matrix
+  jsonld_source: ../resources/source/codelijst_context.json
+  csv_source: ../resources/source/codelijst_source.csv
+dcat:
+  distributie_pad_catalog : ../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst-matrix/
+  distributie_pad_dataset : ../resources/be/vlaanderen/omgeving/data/id/dataset/codelijst-matrix/
+  jsonld_source : ../resources/source/catalog_context.json
+  dataset_source : ../resources/source/dataset_source.csv
+  catalog_source : ../resources/source/catalog_source.csv
