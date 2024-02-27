@@ -135,9 +135,3 @@ const frame_skos_no_prefixes = {
 
 export {  rdf_rules, spdx_rules, spdx_extra_rules, void_rules, foaf_rules, dcterms_rules, dcat_rules, skos_rules, groupId, artifactId, version,  frame_skos_prefixes, frame_skos_no_prefixes, config, context_prefixes, context, shapes_skos };
 
-skos_rules,
-    frame_skos_prefixes,
-    frame_skos_no_prefixes,
-    config,
-    context_prefixes,
-    shapes_skos
