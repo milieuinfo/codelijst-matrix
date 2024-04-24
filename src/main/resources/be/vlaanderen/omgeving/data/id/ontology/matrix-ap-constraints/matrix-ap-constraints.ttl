@@ -47,34 +47,34 @@ omg_voc:matrix-ap-constraints
 
 omg_ag_cl:creator
     rdfs:label "Ontwikkelaar codelijst"@en ;
-    schema:affiliation vl_org:OVO003751 ;
+    schema:affiliation vl_org:OVO003749 ;
     a foaf:Person;
     foaf:firstName "Geert";
     foaf:lastName "Van Haute";
     foaf:mbox <mailto:geert.vanhaute@vlaanderen.be>.
 
 # Node Shapes
-ons:matrix_schema
+ons:schema
     a                sh:NodeShape ;
     rdfs:label       "conceptschema van matrices"@en ;
     sh:name          "conceptschema van matrices"@en ;
     sh:description   "Het schema waarbinnen de matrices gedefinieerd zijn"@en ;
     rdfs:isDefinedBy omg_ont:matrix-ap-constraints, omg_voc:matrix-ap-constraints ;
-    sh:property      omg_ps:conceptscheme_prefLabel, omg_ps:matrix_schema_hasTopConcept,
-                     omg_ps:matrix_definition, omg_ps:matrix_rdf_type;
+    sh:property      omg_ps:conceptscheme_prefLabel, omg_ps:schema_hasTopConcept,
+                     omg_ps:definition, omg_ps:rdf_type;
         sh:closed true ;
     sh:targetClass   skos:ConceptScheme .
 
 
 
-ons:matrix_collection
+ons:collection
     a                sh:NodeShape ;
     rdfs:label       "verzameling"@en ;
     sh:name          "verzameling"@en ;
     sh:description   "Verzamelingen bundelen matrices met gelijkaardige eigenschappen, analysemethoden of matrices waarin ze gemeten worden."@en ;
     rdfs:isDefinedBy omg_ont:matrix-ap-constraints, omg_voc:matrix-ap-constraints ;
-    sh:property      omg_ps:matrix_prefLabel, omg_ps:matrix_collection_member,
-                     omg_ps:matrix_inScheme, omg_ps:matrix_rdf_type;
+    sh:property      omg_ps:prefLabel, omg_ps:collection_member,
+                     omg_ps:inScheme, omg_ps:rdf_type;
     sh:closed true ;
     sh:targetClass   skos:Collection .
 
@@ -87,11 +87,11 @@ ons:matrix
     sh:description   "analysemethodes"@en ;
     rdfs:comment     "compendia onderhouden door VITO"@en ;
     rdfs:isDefinedBy omg_ont:matrix-ap-constraints, omg_voc:matrix-ap-constraints ;
-    sh:property      omg_ps:matrix_notation, omg_ps:matrix_inScheme,
-                     omg_ps:matrix_references, omg_ps:matrix_definition,
-                     omg_ps:matrix_prefLabel, omg_ps:matrix_theme,
-                      omg_ps:matrix_topConceptOf, omg_ps:matrix_altLabel,
-                     omg_ps:matrix_rdf_type, omg_ps:matrix_note ;
+    sh:property      omg_ps:notation, omg_ps:inScheme,
+                     omg_ps:references, omg_ps:definition,
+                     omg_ps:prefLabel, omg_ps:theme,
+                      omg_ps:topConceptOf, omg_ps:altLabel,
+                     omg_ps:rdf_type, omg_ps:note ;
     sh:closed true ;
     sh:targetClass   skos:Concept .
 
@@ -99,7 +99,7 @@ ons:matrix
 
 # Property Shapes
 
-omg_ps:matrix_rdf_type
+omg_ps:rdf_type
     a                sh:PropertyShape ;
     rdfs:label       "rdf type"@en ;
     sh:name          "rdf type"@en ;
@@ -111,7 +111,7 @@ omg_ps:matrix_rdf_type
     sh:path          rdf:type .
 
 
-omg_ps:matrix_topConceptOf
+omg_ps:topConceptOf
     a                sh:PropertyShape ;
     rdfs:label       "topconcept van"@en ;
     sh:name          "topconcept van"@en ;
@@ -123,7 +123,7 @@ omg_ps:matrix_topConceptOf
     sh:path          skos:topConceptOf .
 
 
-omg_ps:matrix_theme
+omg_ps:theme
         a                sh:PropertyShape ;
     rdfs:label       "thema"@en ;
     sh:name          "thema"@en ;
@@ -133,7 +133,7 @@ omg_ps:matrix_theme
     sh:nodeKind      sh:IRI ;
     sh:path          dcat:theme .
 
-#omg_ps:matrix_narrower
+#omg_ps:narrower
 #    a                sh:PropertyShape ;
 #    rdfs:label       "specifieker concept"@en ;
 #    sh:name          "specifieker concept"@en ;
@@ -143,7 +143,7 @@ omg_ps:matrix_theme
 #    sh:nodeKind      sh:IRI ;
 #    sh:path          skos:narrower .
 
-#omg_ps:matrix_broader
+#omg_ps:broader
 #    a                sh:PropertyShape ;
 #    rdfs:label       "breder concept"@en ;
 #    sh:name          "breder concept"@en ;
@@ -154,7 +154,7 @@ omg_ps:matrix_theme
 #    sh:nodeKind      sh:IRI ;
 #    sh:path          skos:broader .
 
-omg_ps:matrix_topConceptOf
+omg_ps:topConceptOf
     a                sh:PropertyShape ;
     rdfs:label       "topconcept van"@en ;
     sh:name          "topconcept van"@en ;
@@ -165,7 +165,7 @@ omg_ps:matrix_topConceptOf
     sh:nodeKind      sh:IRI ;
     sh:path          skos:topConceptOf .
 
-omg_ps:matrix_altLabel
+omg_ps:altLabel
     a                sh:PropertyShape ;
     rdfs:label       "alternatief label"@en ;
     sh:name          "alternatief label"@en ;
@@ -176,7 +176,7 @@ omg_ps:matrix_altLabel
     sh:nodeKind      sh:Literal ;
     sh:path          skos:altLabel .
 
-omg_ps:matrix_collection_member
+omg_ps:collection_member
     a                sh:PropertyShape ;
     rdfs:label       "onderdeel"@en ;
     sh:name          "onderdeel"@en ;
@@ -189,7 +189,7 @@ omg_ps:matrix_collection_member
 
 
 
-#omg_ps:matrix_exactMatch
+#omg_ps:exactMatch
 #    a                sh:PropertyShape ;
 #    rdfs:label       "heeft exacte overeenkomst"@en ;
 #    sh:name          "heeft exacte overeenkomst"@en ;
@@ -198,7 +198,7 @@ omg_ps:matrix_collection_member
 #    sh:nodeKind      sh:IRI ;
 #    sh:path          skos:exactMatch .
 
-omg_ps:matrix_notation
+omg_ps:notation
     a                sh:PropertyShape ;
     rdfs:label       "notatie"@en ;
     sh:name          "notatie"@en ;
@@ -206,10 +206,10 @@ omg_ps:matrix_notation
     rdfs:isDefinedBy omg_ont:matrix-ap-constraints, omg_voc:matrix-ap-constraints ;
     sh:datatype      xsd:string ;
     sh:nodeKind      sh:Literal ;
-    sh:property      omg_ps:matrix_unique_notation ;
+    sh:property      omg_ps:unique_notation ;
     sh:path          skos:notation .
 
-omg_ps:matrix_unique_notation
+omg_ps:unique_notation
     a                  sh:PropertyShape ;
     rdfs:label         "unieke notatie"@en ;
     sh:name            "unieke notatie"@en ;
@@ -221,7 +221,7 @@ omg_ps:matrix_unique_notation
     sh:minCount        1 ;
     sh:maxCount        1 .
 
-omg_ps:matrix_schema_hasTopConcept
+omg_ps:schema_hasTopConcept
     a                sh:PropertyShape ;
     rdfs:label       "heeft topconcept"@en ;
     sh:name          "heeft topconcept"@en ;
@@ -233,7 +233,7 @@ omg_ps:matrix_schema_hasTopConcept
     sh:path          skos:hasTopConcept .
 
 
-omg_ps:matrix_references
+omg_ps:references
     a                sh:PropertyShape ;
     rdfs:label       "wordt vermeld in"@en ;
     sh:name          "wordt vermeld in"@en ;
@@ -242,7 +242,7 @@ omg_ps:matrix_references
     sh:nodeKind      sh:IRI ;
     sh:path          dct:references .
 
-omg_ps:matrix_definition
+omg_ps:definition
     a                sh:PropertyShape ;
     rdfs:label       "definitie"@en ;
     sh:name          "definitie"@en ;
@@ -254,7 +254,7 @@ omg_ps:matrix_definition
     sh:nodeKind      sh:Literal ;
     sh:path          skos:definition .
 
-omg_ps:matrix_note
+omg_ps:note
     a                sh:PropertyShape ;
     rdfs:label       "note"@en ;
     sh:name          "note"@en ;
@@ -265,7 +265,7 @@ omg_ps:matrix_note
     sh:nodeKind      sh:Literal ;
     sh:path          skos:note .
 
-omg_ps:matrix_prefLabel
+omg_ps:prefLabel
     a                sh:PropertyShape ;
     rdfs:label       "voorkeurslabel"@en ;
     sh:name          "voorkeurslabel"@en ;
@@ -293,7 +293,7 @@ omg_ps:conceptscheme_prefLabel
     sh:nodeKind      sh:Literal ;
     sh:path          skos:prefLabel .
 
-omg_ps:matrix_inScheme
+omg_ps:inScheme
     a                sh:PropertyShape ;
     rdfs:label       "is in schema"@en ;
     sh:name          "is in schema"@en ;
