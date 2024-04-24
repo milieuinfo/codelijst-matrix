@@ -1,22 +1,25 @@
 types : matrixtypes
-
 skos:
+  rules :
+    skos_rules : /../node_modules/maven-metadata-generator-npm/src/n3/skos-rules.n3
+    dcterms_rules : /../node_modules/maven-metadata-generator-npm/src/n3/dcterms-rules.n3
   prefixes :
     concept : https://data.omgeving.vlaanderen.be/id/concept/matrix/
-    collection : https://data.omgeving.vlaanderen.be/id/collection/matrix/
+    collectie : https://data.omgeving.vlaanderen.be/id/collection/matrix/
   path: ./main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/
   name: matrix
   turtle: .ttl
   jsonld: .jsonld
-  jsonld_framed: _prefix.jsonld
+  xsd: .xsd
   csv: .csv
+  rdf_xml: .rdf
+  xlsx: .xlsx
   nt: .nt
 
 source:
   path: ./source/
   codelijst_csv: codelijst-source.csv
   context: context.json
-
 dcat:
   path_catalog: /tmp/dcat/be/vlaanderen/omgeving/data/id/catalog/
   path_dataset: /tmp/dcat/be/vlaanderen/omgeving/data/id/dataset/
@@ -26,35 +29,19 @@ dcat:
   catalog_turtle: catalog.ttl
   catalog_jsonld: catalog.jsonld
 
-
-sparql :
-  verrijking_dcat : ../sparql/verrijk_dcat.rq
-  construct_spo : ../sparql/construct.rq
-  construct_dataset : ../sparql/construct_dataset.rq
-
 ap :
   path: ./main/resources/be/vlaanderen/omgeving/data/id/ontology/
   type: ap-constraints
   name: matrix
   turtle: .ttl
 
-n3 :
-  skos_rules : ./n3/skos-rules.n3
-  dcat_rules : ./n3/dcat-rules.n3
-  dcterms_rules : ./n3/dcterms-rules.n3
-  foaf_rules : ./n3/foaf-rules.n3
-  void_rules : ./n3/void-rules.n3
-  rdf_rules : ./n3/rdf-rules.n3
-  spdx_rules : ./n3/spdx-rules.n3
-  spdx_extra_rules : ./n3/spdx-extra-rules.n3
-
 metadata :
   all :
-    accessURL : https://github.com/milieuinfo/codelijst-matrix.git
+    accessURL : https://github.com/omgeving/codelijst-matrix.git
     contactPoint : https://data.omgeving.vlaanderen.be/id/vcard/helpdesk
     license : http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0
     publisher : http://data.vlaanderen.be/id/organisatie/OVO003323
-    rightsHolder :  http://data.vlaanderen.be/id/organisatie/OVO003751
+    rightsHolder :  http://data.vlaanderen.be/id/organisatie/OVO003749
     theme :
       - http://eurovoc.europa.eu/2407
       - http://publications.europa.eu/resource/authority/data-theme/ENVI
@@ -70,14 +57,22 @@ metadata :
   catalog :
     uri : https://data.omgeving.vlaanderen.be/id/catalog
     type: http://www.w3.org/ns/dcat#Catalog
-  dataset :     
+  dataset :
     temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
     type : http://www.w3.org/ns/dcat#Dataset
   distribution :
+    xlsx:
+      mediaType: https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      format: http://publications.europa.eu/resource/authority/file-type/XLSX
+      type: http://www.w3.org/ns/dcat#Distribution
     csv :
       mediaType : https://www.iana.org/assignments/media-types/text/csv
       format : http://publications.europa.eu/resource/authority/file-type/CSV
       type : http://www.w3.org/ns/dcat#Distribution
+    nt:
+      mediaType: https://www.iana.org/assignments/media-types/application/n-triples
+      format: http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES
+      type: http://www.w3.org/ns/dcat#Distribution
     ttl:
       mediaType: https://www.iana.org/assignments/media-types/text/turtle
       format: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
@@ -93,7 +88,6 @@ metadata :
         - http://www.w3.org/ns/dcat#Distribution
         - http://spdx.org/rdf/terms#Package
 
-
 prefixes :
   access_right: http://publications.europa.eu/resource/authority/access-right/
   adms: http://www.w3.org/ns/adms#
@@ -103,6 +97,7 @@ prefixes :
   datasets: https://datasets.omgeving.vlaanderen.be/
   datatheme_be: http://vocab.belgif.be/auth/datatheme/
   datatheme_eu: http://publications.europa.eu/resource/authority/data-theme/
+  dbo: http://dbpedia.org/ontology/
   dcat: http://www.w3.org/ns/dcat#
   dc: http://purl.org/dc/elements/1.1/
   dcterms: http://purl.org/dc/terms/
@@ -144,8 +139,6 @@ prefixes :
   ts: http://www.w3.org/ns/formats/
   vcard: http://www.w3.org/2006/vcard/ns#
   void: http://rdfs.org/ns/void#
+  wise: http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/
+  xkos: http://rdf-vocabulary.ddialliance.org/xkos#
   xsd: http://www.w3.org/2001/XMLSchema#
-
-pom :
-  path : '../pom.xml'
-

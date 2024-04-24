@@ -1,5 +1,5 @@
 @prefix concept: <https://data.omgeving.vlaanderen.be/id/concept/matrix/>.
-@prefix collection: <https://data.omgeving.vlaanderen.be/id/collection/matrix/>.
+@prefix collectie: <https://data.omgeving.vlaanderen.be/id/collection/matrix/>.
 @prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix assettype: <http://purl.org/adms/assettype/>.
@@ -8,6 +8,7 @@
 @prefix datasets: <https://datasets.omgeving.vlaanderen.be/>.
 @prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
 @prefix datatheme_eu: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dcat: <http://www.w3.org/ns/dcat#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
@@ -49,17 +50,19 @@
 @prefix ts: <http://www.w3.org/ns/formats/>.
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
 @prefix void: <http://rdfs.org/ns/void#>.
+@prefix wise: <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-collection:bodem a skos:Collection;
+collectie:bodem a skos:Collection;
     skos:inScheme conceptscheme:matrix;
     skos:member concept:depositie, concept:zwevend_stof;
     skos:prefLabel "Collectie van matrices m.b.t. bodem."@nl.
-collection:lucht a skos:Collection;
+collectie:lucht a skos:Collection;
     skos:inScheme conceptscheme:matrix;
     skos:member concept:biota, concept:eieren, concept:gewassen, concept:groenten, concept:hard_gesteente, concept:infrastructuur, concept:sediment, concept:strooisel, concept:vilt;
     skos:prefLabel "Collectie van matrices m.b.t. lucht."@nl.
-collection:water a skos:Collection;
+collectie:water a skos:Collection;
     skos:inScheme conceptscheme:matrix;
     skos:member concept:afvalwater, concept:bemalingswater, concept:drinkwater, concept:grondwater, concept:koelwater, concept:oppervlaktewater, concept:waterbodem;
     skos:prefLabel "Collectie van matrices m.b.t. water."@nl.

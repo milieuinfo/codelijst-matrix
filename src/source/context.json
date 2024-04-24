@@ -248,8 +248,7 @@
     "@language" : "nl"
   },
   "notation" : {
-    "@id" : "http://www.w3.org/2004/02/skos/core#notation",
-    "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2004/02/skos/core#notation"
   },
   "altLabel" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
@@ -267,8 +266,68 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#member",
     "@type" : "@id"
   },
+  "casNumber" : {
+    "@id" : "http://dbpedia.org/ontology/casNumber"
+  },
+  "references" : {
+    "@id" : "http://purl.org/dc/terms/references",
+    "@type" : "@id"
+  },
+  "isReferencedBy" : {
+    "@id" : "http://purl.org/dc/terms/isReferencedBy",
+    "@type" : "@id"
+  },
+  "relation" : {
+    "@id" : "http://purl.org/dc/terms/relation",
+    "@type" : "@id"
+  },
   "graph" : {
     "@id" : "@graph"
+  },
+  "broaderTransitive" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+    "@type" : "@id"
+  },
+  "broadMatch" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broadMatch",
+    "@type" : "@id"
+  },
+  "closeMatch" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+    "@type" : "@id"
+  },
+  "exactMatch" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+    "@type" : "@id"
+  },
+  "mappingRelation" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
+    "@type" : "@id"
+  },
+  "broader" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+    "@type" : "@id"
+  },
+  "narrower" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+    "@type" : "@id"
+  },
+  "narrowerTransitive" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+    "@type" : "@id"
+  },
+  "narrowMatch" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
+    "@type" : "@id"
+  },
+  "semanticRelation" : {
+    "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
+    "@type" : "@id"
+  },
+  "belongsTo" : {
+    "@id" : "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+    "@type" : "@id"
   }
 }
+
 

@@ -1,4 +1,3 @@
-import { get_version_urls } from 'maven-metadata-generator-npm';
+import { create_metadata } from 'maven-metadata-generator-npm';
 
-
-get_version_urls()
+create_metadata()
