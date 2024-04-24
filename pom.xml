@@ -9,14 +9,14 @@
   <packaging>jar</packaging>
   <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
   <artifactId>codelijst-matrix</artifactId>
-  <version>3.0.2-SNAPSHOT</version>
+  <version>3.0.2</version>
   <name>codelijst-matrix</name>
   <description />
   <scm>
     <connection>scm:git:https://github.com/milieuinfo/codelijst-matrix.git</connection>
     <developerConnection>scm:git:https://github.com/milieuinfo/codelijst-matrix.git</developerConnection>
     <url>https://github.com/milieuinfo/codelijst-matrix.git</url>
-    <tag>HEAD</tag>
+    <tag>codelijst-matrix-3.0.2</tag>
   </scm>
   <build>
     <plugins>
