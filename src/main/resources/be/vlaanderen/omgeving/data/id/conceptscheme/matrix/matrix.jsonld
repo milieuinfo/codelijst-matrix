@@ -415,6 +415,7 @@
                 "concept:groenten",
                 "concept:hard_gesteente",
                 "concept:infrastructuur",
+                "concept:lucht",
                 "concept:sediment",
                 "concept:strooisel",
                 "concept:vilt"
@@ -533,6 +534,14 @@
             "theme": "gemet:15179"
         },
         {
+            "id": "concept:lucht",
+            "type": "skos:Concept",
+            "inScheme": "conceptscheme:matrix",
+            "prefLabel": "Lucht",
+            "topConceptOf": "conceptscheme:matrix",
+            "theme": "gemet:7884"
+        },
+        {
             "id": "concept:oppervlaktewater",
             "type": "skos:Concept",
             "inScheme": "conceptscheme:matrix",
@@ -596,6 +605,7 @@
                 "concept:groenten",
                 "concept:hard_gesteente",
                 "concept:infrastructuur",
+                "concept:lucht",
                 "concept:sediment",
                 "concept:strooisel",
                 "concept:vilt",

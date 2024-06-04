@@ -60,7 +60,7 @@ collectie:bodem a skos:Collection;
     skos:prefLabel "Collectie van matrices m.b.t. bodem."@nl.
 collectie:lucht a skos:Collection;
     skos:inScheme conceptscheme:matrix;
-    skos:member concept:biota, concept:eieren, concept:gewassen, concept:groenten, concept:hard_gesteente, concept:infrastructuur, concept:sediment, concept:strooisel, concept:vilt;
+    skos:member concept:biota, concept:eieren, concept:gewassen, concept:groenten, concept:hard_gesteente, concept:infrastructuur, concept:lucht, concept:sediment, concept:strooisel, concept:vilt;
     skos:prefLabel "Collectie van matrices m.b.t. lucht."@nl.
 collectie:water a skos:Collection;
     skos:inScheme conceptscheme:matrix;
@@ -126,6 +126,11 @@ concept:koelwater a skos:Concept;
     skos:prefLabel "Koelwater"@nl;
     skos:topConceptOf conceptscheme:matrix;
     dcat:theme <http://www.eionet.europa.eu/gemet/concept/15179>.
+concept:lucht a skos:Concept;
+    skos:inScheme conceptscheme:matrix;
+    skos:prefLabel "Lucht"@nl;
+    skos:topConceptOf conceptscheme:matrix;
+    dcat:theme <http://www.eionet.europa.eu/gemet/concept/7884>.
 concept:oppervlaktewater a skos:Concept;
     skos:inScheme conceptscheme:matrix;
     skos:prefLabel "Oppervlaktewater"@nl;
@@ -161,5 +166,5 @@ concept:zwevend_stof a skos:Concept;
     skos:topConceptOf conceptscheme:matrix;
     dcat:theme <http://www.eionet.europa.eu/gemet/concept/270>.
 conceptscheme:matrix a skos:ConceptScheme;
-    skos:hasTopConcept concept:afvalwater, concept:bemalingswater, concept:biota, concept:depositie, concept:drinkwater, concept:eieren, concept:gewassen, concept:groenten, concept:grondwater, concept:hard_gesteente, concept:infrastructuur, concept:koelwater, concept:oppervlaktewater, concept:sediment, concept:strooisel, concept:vilt, concept:waterbodem, concept:zwevend_stof;
+    skos:hasTopConcept concept:afvalwater, concept:bemalingswater, concept:biota, concept:depositie, concept:drinkwater, concept:eieren, concept:gewassen, concept:groenten, concept:grondwater, concept:hard_gesteente, concept:infrastructuur, concept:koelwater, concept:lucht, concept:oppervlaktewater, concept:sediment, concept:strooisel, concept:vilt, concept:waterbodem, concept:zwevend_stof;
     skos:prefLabel "Codelijst matrices."@nl.
